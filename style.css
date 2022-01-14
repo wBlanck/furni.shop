@@ -56,9 +56,12 @@ svg {
 /* ------------ COMPONENTS ----------------*/
 
 /* ------------ REUSED STYLES ----------------*/
+.active {
+  color: black !important;
+}
 .section-title {
   font-family: "Noto Serif JP", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 36px;
   line-height: 50px;
   color: var(--green-400);
@@ -214,6 +217,7 @@ svg {
 .about-card-title {
   font-size: 24px;
   line-height: 29px;
+  font-weight: 500;
   color: var(--green-400);
   margin-bottom: var(--py-md);
 }
@@ -223,4 +227,56 @@ svg {
 }
 .about-card-desc {
   color: var(--gray-400);
+}
+
+/* ------------ PRODUCTS SECTION ----------------*/
+.products {
+  padding-block: var(--py-xl);
+  text-align: center;
+}
+.products-link {
+  position: relative;
+  font-size: 17px;
+  color: var(--gray-800);
+  font-weight: 500;
+}
+.products-link i {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 20px;
+  color: var(--green-400);
+  font-size: 23px;
+}
+.products-link i::after {
+  content: "";
+  width: 150%;
+  height: 100%;
+  background-color: #f4f6f6;
+  position: absolute;
+  left: 50%;
+  z-index: -10;
+}
+.product-categories {
+  display: flex;
+  gap: 30px;
+}
+.product-category {
+  font-size: 18px;
+  color: var(--gray-300);
+}
+.product {
+  background-color: #f4f6f6;
+  font-size: 20px;
+}
+.product-title {
+  color: var(--gray-800);
+}
+.product-price {
+  color: var(--gray-400);
+}
+.original-price {
+  text-decoration: line-through;
+}
+.product-img {
 }
