@@ -5,12 +5,13 @@
   --blue-400: hsla(222, 92%, 14%, 1);
   --gray-800: hsla(240, 2%, 24%, 1);
   --gray-400: hsla(240, 3%, 38%, 1);
+  --white: hsla(0, 0%, 100%, 1);
   --gray-300: hsla(20, 2%, 66%, 1);
   --gray-200: hsla(240, 12%, 89%, 1);
-  --white: hsla(0, 0%, 100%, 1);
 
   /* SPACING */
   --px: 20px;
+  --px-xl: 60px;
   /* 16, 20, 24, 55, 60 */
   --py-sm: 16px;
   --py-md: 20px;
@@ -55,6 +56,19 @@ svg {
 /* ------------ COMPONENTS ----------------*/
 
 /* ------------ REUSED STYLES ----------------*/
+.section-title {
+  font-family: "Noto Serif JP", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: var(--green-400);
+  margin-bottom: var(--py-md);
+}
+.section-subtitle {
+  line-height: 26px;
+  color: var(--gray-400);
+  margin-bottom: var(--py-xl);
+}
 
 /* ------------ MAIN ----------------*/
 .container {
@@ -79,7 +93,7 @@ svg {
   gap: 15px;
 }
 .logo {
-  font-family: Noto Serif JP;
+  font-family: "Noto Serif JP", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 37px;
@@ -120,3 +134,69 @@ svg {
   font-size: 1.2rem;
   cursor: pointer;
 }
+/* ------------ companies ----------------*/
+.companies {
+  text-align: center;
+  padding-block: var(--px-xl);
+  background-color: var(--gray-200);
+}
+.companies .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.14em;
+  color: var(--blue-400);
+  margin-bottom: var(--py-lg);
+}
+.company-logos {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.logo-item:nth-child(1) {
+  grid-column: 1/5;
+}
+.logo-item:nth-child(2) {
+  grid-column: 1/3;
+}
+.logo-item:nth-child(3) {
+  grid-column: 3/5;
+}
+.logo-item:nth-child(4) {
+  grid-column: 1/3;
+}
+.logo-item:nth-child(5) {
+  grid-column: 3/5;
+}
+
+/* ------------ HOT DEALS SECTION ----------------*/
+.deals {
+  text-align: center;
+  padding-block: var(--py-xl);
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--py-lg);
+}
+.card-icon {
+  color: var(--gray-800);
+  font-size: 2rem;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--gray-800);
+  margin-block: var(--py-md);
+}
+.card-desc {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--gray-400);
+}
+
+/* ------------ ABOUT US SECTION ----------------*/
