@@ -1,7 +1,122 @@
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --green-400: hsla(180, 36%, 22%, 1);
+  --blue-400: hsla(222, 92%, 14%, 1);
+  --gray-800: hsla(240, 2%, 24%, 1);
+  --gray-400: hsla(240, 3%, 38%, 1);
+  --gray-300: hsla(20, 2%, 66%, 1);
+  --gray-200: hsla(240, 12%, 89%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+
+  /* SPACING */
+  --px: 20px;
+  /* 16, 20, 24, 55, 60 */
+  --py-sm: 16px;
+  --py-md: 20px;
+  --py-rg: 24px;
+  --py-lg: 55px;
+  --py-xl: 60px;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* RESET */
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img,
+span,
+svg {
+  display: block;
+}
+/* ------------ COMPONENTS ----------------*/
+
+/* ------------ REUSED STYLES ----------------*/
+
+/* ------------ MAIN ----------------*/
+.container {
+  max-width: 1200px;
+  margin-block: auto;
+  padding-inline: 10px;
+}
+
+/* ------------ HEADER ----------------*/
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  z-index: 10;
+}
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  font-family: Noto Serif JP;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 37px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+/* ------------ HOME ----------------*/
+.home {
+  color: var(--white);
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5)),
+    url(/assets/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+}
+.main-heading {
+  font-family: Noto Serif JP;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: var(--py-md);
+}
+.main-subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
