@@ -1,6 +1,5 @@
 /* VARIABLES */
 :root {
-  /* COLORS */
   --green-400: hsla(180, 36%, 22%, 1);
   --blue-400: hsla(222, 92%, 14%, 1);
   --gray-800: hsla(240, 2%, 24%, 1);
@@ -12,7 +11,6 @@
   /* SPACING */
   --px: 20px;
   --px-xl: 60px;
-  /* 16, 20, 24, 55, 60 */
   --py-sm: 16px;
   --py-md: 20px;
   --py-rg: 24px;
@@ -28,7 +26,9 @@
   box-sizing: border-box;
 }
 
-/* RESET */
+/* ------------ 
+  RESET  
+----------------*/
 
 li {
   list-style: none;
@@ -53,9 +53,21 @@ span,
 svg {
   display: block;
 }
-/* ------------ COMPONENTS ----------------*/
+/* ------------ 
+  COMPONENTS  
+----------------*/
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--green-400);
+}
 
-/* ------------ REUSED STYLES ----------------*/
+/* ------------ 
+  REUSED STYLES 
+----------------*/
+
 .active {
   color: black !important;
 }
@@ -73,14 +85,20 @@ svg {
   margin-bottom: var(--py-xl);
 }
 
-/* ------------ MAIN ----------------*/
+/* ------------ 
+  MAIN SECTION 
+----------------*/
+
 .container {
   max-width: 1200px;
   margin-block: auto;
   padding-inline: 10px;
 }
 
-/* ------------ HEADER ----------------*/
+/* ------------ 
+  HEADER SECTION 
+----------------*/
+
 .navbar {
   position: fixed;
   display: flex;
@@ -106,7 +124,10 @@ svg {
   color: #ffffff;
 }
 
-/* ------------ HOME ----------------*/
+/* ------------ 
+  HOME SECTION 
+----------------*/
+
 .home {
   color: var(--white);
   height: 100vh;
@@ -139,7 +160,10 @@ svg {
   font-size: 1.2rem;
   cursor: pointer;
 }
-/* ------------ companies ----------------*/
+/* ------------ 
+  COMPANIES SECTION 
+----------------*/
+
 .companies {
   text-align: center;
   padding-block: var(--px-xl);
@@ -176,7 +200,10 @@ svg {
   grid-column: 3/5;
 }
 
-/* ------------ HOT DEALS SECTION ----------------*/
+/* ------------ 
+  HOTDEALS SECTION 
+----------------*/
+
 .deals {
   text-align: center;
   padding-block: var(--py-xl);
@@ -204,7 +231,10 @@ svg {
   color: var(--gray-400);
 }
 
-/* ------------ ABOUT US SECTION ----------------*/
+/* ------------ 
+  ABOUT SECTION 
+----------------*/
+
 .about {
   text-align: center;
   padding-block: var(--py-xl);
@@ -231,9 +261,12 @@ svg {
   color: var(--gray-400);
 }
 
-/* ------------ PRODUCTS SECTION ----------------*/
+/* ------------ 
+  PRODUCTS SECTION 
+----------------*/
 .products {
-  padding-block: var(--py-xl);
+  padding-top: var(--py-xl);
+  padding-bottom: 120px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -282,7 +315,7 @@ svg {
   background-color: #f4f6f6;
   font-size: 20px;
   position: relative;
-  padding: 25px 25px 200px;
+  padding: 30px 30px 200px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -316,4 +349,46 @@ svg {
   position: absolute;
   top: 50%;
   align-self: center;
+}
+
+/* ------------ 
+  TESTIMONIAL SECTION 
+----------------*/
+.testimonial {
+  padding-block: var(--py-xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f6;
+}
+.testimonial-card {
+}
+.testimonial-img {
+  max-width: 240px;
+  margin-bottom: var(--py-lg);
+}
+.testimonial-quote {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--gray-400);
+  margin-bottom: var(--py-md);
+}
+.testimonial-person {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: var(--py-md);
+}
+.testimonial-role {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray-400);
+  margin-bottom: var(--py-md);
+}
+.testimonial-buttons {
+  display: flex;
+  gap: 20px;
 }
