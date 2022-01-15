@@ -56,12 +56,23 @@ svg {
 /* ------------ 
   COMPONENTS  
 ----------------*/
-.btn {
+.btn-round {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   color: white;
   background-color: var(--green-400);
+}
+.btn-primary {
+  padding: 10px 25px;
+  display: block;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
 }
 
 /* ------------ 
@@ -391,4 +402,55 @@ svg {
 .testimonial-buttons {
   display: flex;
   gap: 20px;
+}
+/* ------------ 
+  FOOTER SECTION 
+----------------*/
+.footer {
+  padding-block: var(--py-xl);
+  background-color: var(--green-400);
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: var(--white);
+  font-size: 24px;
+}
+.footer-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: var(--py-lg);
+}
+.footer .socials {
+  margin-bottom: var(--py-lg);
+}
+.btn-primary:nth-child(1) {
+  color: var(--white);
+  background-color: #3a5f5f;
+}
+.btn-primary:nth-child(2) {
+  color: var(--green-400);
+  background-color: var(--white);
+}
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.footer-links ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-links h4 {
+  font-weight: 500;
+}
+.footer-links a {
+  font-size: 15px;
 }
