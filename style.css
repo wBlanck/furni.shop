@@ -89,11 +89,13 @@ svg {
   padding: 10px;
   width: 100%;
   z-index: 10;
+  transition: 0.3s;
 }
 .navbar-toggle {
   display: flex;
   align-items: center;
   gap: 15px;
+  cursor: pointer;
 }
 .logo {
   font-family: "Noto Serif JP", sans-serif;
@@ -233,12 +235,21 @@ svg {
 .products {
   padding-block: var(--py-xl);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products h2 {
+  margin-bottom: var(--py-lg);
 }
 .products-link {
   position: relative;
   font-size: 17px;
   color: var(--gray-800);
   font-weight: 500;
+  margin-bottom: var(--py-lg);
+  display: inline-block;
 }
 .products-link i {
   position: absolute;
@@ -260,23 +271,49 @@ svg {
 .product-categories {
   display: flex;
   gap: 30px;
+  margin-bottom: var(--py-lg);
 }
 .product-category {
   font-size: 18px;
   color: var(--gray-300);
+  cursor: pointer;
 }
 .product {
   background-color: #f4f6f6;
   font-size: 20px;
+  position: relative;
+  padding: 25px 25px 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--py-lg);
+  width: 100%;
+}
+.product i {
+  position: absolute;
+  right: 20px;
+  top: -17px;
+  background: #d6c4b8;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 1rem;
 }
 .product-title {
   color: var(--gray-800);
 }
 .product-price {
   color: var(--gray-400);
+  display: flex;
+  justify-content: space-between;
 }
 .original-price {
   text-decoration: line-through;
 }
 .product-img {
+  position: absolute;
+  top: 50%;
+  align-self: center;
 }
