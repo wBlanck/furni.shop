@@ -120,6 +120,16 @@ svg {
   z-index: 10;
   transition: 0.3s;
 }
+.navbar-links {
+  display: none;
+  align-items: center;
+  gap: 25px;
+}
+.navbar-item {
+}
+.navbar-link {
+  color: var(--white);
+}
 .navbar-toggle {
   display: flex;
   align-items: center;
@@ -195,6 +205,13 @@ svg {
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
+.logo-item {
+  width: 100%;
+}
+.logo-item img {
+  width: min(200px, 100%);
+  display: inline-block;
+}
 .logo-item:nth-child(1) {
   grid-column: 1/5;
 }
@@ -252,10 +269,13 @@ svg {
 }
 .about-cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: var(--py-lg);
 }
 .about-card {
+  width: 380px;
 }
 .about-card-title {
   font-size: 24px;
@@ -283,6 +303,7 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .products h2 {
   margin-bottom: var(--py-lg);
@@ -322,6 +343,10 @@ svg {
   color: var(--gray-300);
   cursor: pointer;
 }
+.product-list {
+  display: flex;
+  gap: 20px;
+}
 .product {
   background-color: #f4f6f6;
   font-size: 20px;
@@ -333,6 +358,7 @@ svg {
   justify-content: center;
   gap: var(--py-lg);
   width: 100%;
+  width: 350px;
 }
 .product i {
   position: absolute;
@@ -453,4 +479,35 @@ svg {
 }
 .footer-links a {
   font-size: 15px;
+}
+
+/* ------------ 
+  MEDIA QUERIES SECTION 
+----------------*/
+
+@media screen and (min-width: 800px) {
+  .section-subtitle {
+    max-width: 530px;
+    margin-inline: auto;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar-links {
+    display: flex;
+  }
+  .company-logos {
+    display: flex;
+  }
+  .cards {
+    flex-direction: row;
+  }
+
+  .about-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-card {
+    width: 340px;
+  }
 }

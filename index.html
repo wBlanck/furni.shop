@@ -34,6 +34,20 @@
     <header>
       <nav class="navbar">
         <a href="#" class="logo">furni.shop</a>
+        <ul class="navbar-links">
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Features</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
         <div class="navbar-toggle">
           <!-- SEARCH ICON -->
           <svg
@@ -88,53 +102,60 @@
 
       <!-- COMPANIES -->
       <section class="companies">
-        <h2 class="title">TRUSTED BY OVER 1K+ COMPANIES</h2>
-        <ul class="company-logos">
-          <li class="logo-item">
-            <img src="/assets/Business web.svg" alt="Business Web Logo" />
-          </li>
-          <li class="logo-item">
-            <img src="/assets/Microsoft.svg" alt="Microsoft Logo" />
-          </li>
-          <li class="logo-item">
-            <img src="/assets/Fortune.svg" alt="Fortune Logo" />
-          </li>
-          <li class="logo-item">
-            <img src="/assets/Mashable.svg" alt="Mashable Logo" />
-          </li>
-          <li class="logo-item">
-            <img src="/assets/Entrepreneur.svg" alt="Entrepreneur Logo" />
-          </li>
-        </ul>
+
+        <div class="container">
+          <h2 class="title">TRUSTED BY OVER 1K+ COMPANIES</h2>
+          <ul class="company-logos">
+            <li class="logo-item">
+              <img src="/assets/Business web.svg" alt="Business Web Logo" />
+            </li>
+            <li class="logo-item">
+              <img src="/assets/Microsoft.svg" alt="Microsoft Logo" />
+            </li>
+            <li class="logo-item">
+              <img src="/assets/Fortune.svg" alt="Fortune Logo" />
+            </li>
+            <li class="logo-item">
+              <img src="/assets/Mashable.svg" alt="Mashable Logo" />
+            </li>
+            <li class="logo-item">
+              <img src="/assets/Entrepreneur.svg" alt="Entrepreneur Logo" />
+            </li>
+          </ul>
+        </div>
+        
       </section>
 
       <!-- HOT DEALS -->
       <section class="deals">
-        <h2 class="section-title">Hot deals for you</h2>
-        <p class="section-subtitle">
-          Online shopping for retail sales direct to consumers
-        </p>
-        <ul class="cards">
-          <li class="card">
-            <i class="card-icon fab fa-bitcoin"></i>
-            <h3 class="card-title">1.5% cashback</h3>
-            <p class="card-desc">Online shopping for retail sales</p>
-          </li>
-          <li class="card">
-            <i class="card-icon fab fa-bitcoin"></i>
-            <h3 class="card-title">30-day terms</h3>
-            <p class="card-desc">
-              Online shopping for retail sales direct to consumers
-            </p>
-          </li>
-          <li class="card">
-            <i class="card-icon fab fa-bitcoin"></i>
-            <h3 class="card-title">Save Money</h3>
-            <p class="card-desc">
-              Online shopping for retail sales direct to consumers
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+
+          <h2 class="section-title">Hot deals for you</h2>
+          <p class="section-subtitle">
+            Online shopping for retail sales direct to consumers
+          </p>
+          <ul class="cards">
+            <li class="card">
+              <i class="card-icon fab fa-bitcoin"></i>
+              <h3 class="card-title">1.5% cashback</h3>
+              <p class="card-desc">Online shopping for retail sales</p>
+            </li>
+            <li class="card">
+              <i class="card-icon fab fa-bitcoin"></i>
+              <h3 class="card-title">30-day terms</h3>
+              <p class="card-desc">
+                Online shopping for retail sales direct to consumers
+              </p>
+            </li>
+            <li class="card">
+              <i class="card-icon fab fa-bitcoin"></i>
+              <h3 class="card-title">Save Money</h3>
+              <p class="card-desc">
+                Online shopping for retail sales direct to consumers
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- ABOUT US -->
@@ -176,7 +197,7 @@
       </section>
 
       <!-- PRODUCTS -->
-      <section class="products container">
+      <section class="products container" id="products">
         <h2 class="section-title">Products</h2>
         <a href="#" class="products-link"
           >See All <span><i class="fas fa-long-arrow-alt-right"></i></span
@@ -188,18 +209,45 @@
           <li class="product-category">Chair</li>
           <li class="product-category">Light</li>
         </ul>
-        <div class="product">
-          <i class="fas fa-cart-plus"></i>
-          <h4 class="product-title">Vintage Chair</h4>
-          <p class="product-price">
-            $65.00 <span class="original-price">$95.00</span>
-          </p>
-          <img
-            src="/assets/Image-1.png"
-            alt="Vintage Chair"
-            class="product-img"
-          />
-        </div>
+        <ul class="product-list">
+          <div class="product">
+            <i class="fas fa-cart-plus"></i>
+            <h4 class="product-title">Vintage Chair</h4>
+            <p class="product-price">
+              $65.00 <span class="original-price">$95.00</span>
+            </p>
+            <img
+              src="/assets/Image-1.png"
+              alt="Vintage Chair"
+              class="product-img"
+            />
+          </div>
+          <div class="product">
+            <i class="fas fa-cart-plus"></i>
+            <h4 class="product-title">Lamp</h4>
+            <p class="product-price">
+              $65.00 <span class="original-price">$95.00</span>
+            </p>
+            <img
+              src="/assets/Image-2.png"
+              alt="Vintage Chair"
+              class="product-img"
+            />
+          </div>
+          <div class="product">
+            <i class="fas fa-cart-plus"></i>
+            <h4 class="product-title">Modern Chair</h4>
+            <p class="product-price">
+              $65.00 <span class="original-price">$95.00</span>
+            </p>
+            <img
+              src="/assets/Image-3.png"
+              alt="Vintage Chair"
+              class="product-img"
+            />
+          </div>
+        </ul>
+        
       </section>
 
       <!-- TESTIMONIAL -->
@@ -207,7 +255,7 @@
         <h2 class="section-title">What our happy client say</h2>
         <p class="section-subtitle">
           File storage made easy – including powerful features you won’t find
-          anywhere else. Whether you’re.
+          anywhere else. Whether you're.
         </p>
         <p class="testimonial-card">
           <img src="/assets/testimonial.jfif" alt="" class="testimonial-img" />
